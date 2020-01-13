@@ -14,21 +14,21 @@ This page has the codes and data appeared in the paper, "Mitigating large advers
    1) When 3x3 Wavg (i.e. moving average kernel) is used to find the estimated perturbation $\hat{\epsilon}$
 
        <pre>./mitigating_adversarial_with_3x3_estimation.sh adversarial_example
-       => Do not type the file format like [.png]
+       => Do not type the file format ".png"
 
    2) When 7x7 Wavg (i.e. moving average kernel) is used to find the estimated perturbation $\hat{\epsilon}$
       <pre>./mitigating_adversarial_with_7x7_estimation.sh adversarial_example
-      => Do not type the file format like [.png]
+      => Do not type the file format ".png"
 
 3. Then, you will get the following three to be fed into the inference on the ResNet-50 having the weights you are using to craft "adversarial_example.png"
 
-   1) adversarial_example_mitigated_step100.png
+   1) <pre>adversarial_example_mitigated_step100.png
       - It is just mitigated not soothed.
       
-   2) adversarial_example_mitigated_and_soothed_by_ma.png     
+   2) <pre>adversarial_example_mitigated_and_soothed_by_ma.png     
       - It is mitigated and soothed by 3x3 moving average filter
 
-   3) adversarial_example_mitigated_and_soothed_by_JPEG.jpg 
+   3) <pre>adversarial_example_mitigated_and_soothed_by_JPEG.jpg 
       - It is mitigated and soothed by JPEG encoding (quality is set 20 out of 100).
 
 4. Running Examples
