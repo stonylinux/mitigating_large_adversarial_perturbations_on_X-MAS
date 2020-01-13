@@ -13,7 +13,7 @@ This page has the codes and data appeared in the paper, "Mitigating large advers
 
    1) When 3x3 Wavg (i.e. moving average kernel) is used to find the estimated perturbation $\hat{\epsilon}$
 
-       ./mitigating_adversarial_with_3x3_estimation.sh adversarial_example
+       <pre>./mitigating_adversarial_with_3x3_estimation.sh adversarial_example
        => Do not type the file format like [.png]
 
    2) When 7x7 Wavg (i.e. moving average kernel) is used to find the estimated perturbation $\hat{\epsilon}$
