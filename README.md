@@ -17,7 +17,7 @@ This page has the codes and data appeared in the paper, "Mitigating large advers
        => Do not type the file format like [.png]
 
    2) When 7x7 Wavg (i.e. moving average kernel) is used to find the estimated perturbation $\hat{\epsilon}$
-      ./mitigating_adversarial_with_7x7_estimation.sh adversarial_example
+      <pre>./mitigating_adversarial_with_7x7_estimation.sh adversarial_example
       => Do not type the file format like [.png]
 
 3. Then, you will get the following three to be fed into the inference on the ResNet-50 having the weights you are using to craft "adversarial_example.png"
@@ -39,7 +39,7 @@ This page has the codes and data appeared in the paper, "Mitigating large advers
          
         The prediction accuracy of unmitigated "ambulance_ifgsm_ll_adversarial_eps64.png" is    
        
-        ../caffe-master/inference_resnet.sh   ambulance_ifgsm_ll_adversarial_eps64.png    
+        <pre>../caffe-master/inference_resnet.sh   ambulance_ifgsm_ll_adversarial_eps64.png    
           
         where "../caffe-master/inference_resnet.sh" is the inference with ResNet-50 weight used for "iterative least-likely FGSM attack"      
           
@@ -51,11 +51,11 @@ This page has the codes and data appeared in the paper, "Mitigating large advers
     
     2) Run mitigation with 7x7 moving average window for the estimated perturbation  
       
-       ./mitigating_adversarial_with_7x7_estimation.sh ambulance_ifgsm_ll_adversarial_eps64  
+       <pre>./mitigating_adversarial_with_7x7_estimation.sh ambulance_ifgsm_ll_adversarial_eps64  
    
     3) Prediction accuracy of the "just" mitigated output   
       
-       ../caffe-master/inference_resnet.sh ambulance_ifgsm_ll_adversarial_eps64_mitigated_step100.png   
+       <pre>../caffe-master/inference_resnet.sh ambulance_ifgsm_ll_adversarial_eps64_mitigated_step100.png   
   
        ---------- Prediction for ambulance_ifgsm_ll_adversarial_eps64_mitigated_step100.png ----------  
        0.9517 - "n02701002 ambulance"  
@@ -64,7 +64,7 @@ This page has the codes and data appeared in the paper, "Mitigating large advers
 
     4) Prediction accuracy of the mitigated and soothed by 3x3 moving average filter  
       
-       ../caffe-master/inference_resnet.sh ambulance_ifgsm_ll_adversarial_eps64_mitigated_and_soothed_by_ma.png   
+       <pre>../caffe-master/inference_resnet.sh ambulance_ifgsm_ll_adversarial_eps64_mitigated_and_soothed_by_ma.png   
          
        ---------- Prediction for ambulance_ifgsm_ll_adversarial_eps64_mitigated_and_soothed_by_ma.png ----------  
        0.9418 - "n02701002 ambulance"  
@@ -73,7 +73,7 @@ This page has the codes and data appeared in the paper, "Mitigating large advers
   
     5) Prediction accuracy of the mitigated and soothed by JPEG encoding (quality is set as 20 out of 100)  
       
-       ../caffe-master/inference_resnet.sh ambulance_ifgsm_ll_adversarial_eps64_mitigated_and_soothed_by_JPEG.jpg  
+       <pre>../caffe-master/inference_resnet.sh ambulance_ifgsm_ll_adversarial_eps64_mitigated_and_soothed_by_JPEG.jpg  
          
        ---------- Prediction for ambulance_ifgsm_ll_adversarial_eps64_mitigated_and_soothed_by_JPEG.jpg ----------  
        0.9793 - "n02701002 ambulance"  
