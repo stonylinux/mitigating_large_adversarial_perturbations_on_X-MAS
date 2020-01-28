@@ -7,7 +7,10 @@ This page has the codes and data appeared in the paper, "Mitigating large advers
       Also, you can get the target weight kernel for FGSM attack from https://github.com/KaimingHe/deep-residual-networks  
       The numbers in the prediction accuracies can be little different (actually very litte different) accordiing to the floating-point formats (e.g. half vs single vs double) that machines support.  
      
-   2) mitigation runs several ImageMagick's "convert" scripts such that you need to have ImageMaick (https://imagemagick.org/index.php) on your environment
+   2) mitigation runs several ImageMagick's "convert" scripts such that you need to have ImageMaick (https://imagemagick.org/index.php) on your environment.  
+   
+   3) The benign versions of the adversarial examples on this site end with "_224x224.png"  
+      e.g.) ambulance_224x224.png is the benign version of the adversarial example "ambulance_ifgsm_adversarial_eps64.png".  
 
 2. Once you get the adversarial example "adversarial_example.png", you can run the mitigation script as below.
 
