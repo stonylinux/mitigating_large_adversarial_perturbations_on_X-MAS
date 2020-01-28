@@ -8,9 +8,14 @@ This page has the codes and data appeared in the paper, "Mitigating large advers
       The numbers in the prediction accuracies can be little different (actually very litte different) accordiing to the floating-point formats (e.g. half vs single vs double) that machines support.  
      
    2) mitigation runs several ImageMagick's "convert" scripts such that you need to have ImageMaick (https://imagemagick.org/index.php) on your environment.  
-   
-   3) The benign versions of the adversarial examples on this site end with "_224x224.png"  
-      e.g.) ambulance_224x224.png is the benign version of the adversarial example "ambulance_ifgsm_adversarial_eps64.png".  
+  
+   3) $\epsilon$ of an adversarial example is noted as "eps#" in the adversarial example file.  
+      <pre> ambulance_ifgsm_adversarial_eps64.png: ambulance image crafted by the basic iterative FGSM attack with $\epsilon$ = 64
+       ambulance_fgsm_adversarial_eps16.png: ambulance image crafted by the fast FGSM attack with $\epsilon$ = 16   
+       ambulance_ifgsm_ll_adversarial_eps64.png: ambulance image crafted by the iterative least-likely FGSM attack with $\epsilon$ = 64
+       
+   4) The benign versions of the adversarial examples on this site end with "_224x224.png"  
+      <pre> ambulance_224x224.png is the benign version of the adversarial example "ambulance_ifgsm_adversarial_eps64.png".  
 
 2. Once you get the adversarial example "adversarial_example.png", you can run the mitigation script as below.
 
