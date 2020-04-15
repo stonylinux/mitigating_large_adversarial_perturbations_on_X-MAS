@@ -1,6 +1,7 @@
 # Updates (APR/2020) 
 Upload the examples that mitigates the perturbations of PGD and CW attacks. 
-     
+The codes below are changed from the demo of https://github.com/Harry24k/adversarial-attacks-pytorch to show the mitigated results.  
+       
 1. Mitigating the perturbation of PGD attack  
    <pre> ./PGD-pytorch_with_Mitigation/Mitigation.ipynb  
    
