@@ -1,4 +1,4 @@
-# Updates on APR/15/2020
+# Updates (APR/2020) 
 Upload the examples that mitigates the perturbations of PGD and CW attacks. 
      
 1. Mitigating the perturbation of PGD attack  
