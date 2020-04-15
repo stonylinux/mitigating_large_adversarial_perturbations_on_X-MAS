@@ -1,3 +1,9 @@
+# Updates on APR/15/2020
+Upload the examples that mitigates the perturbations of CW and PGD attacks. 
+  
+Mitigating the perturbation of CW attack ./CW-pytorch_with_Mitigation/Mitigation.ipynb  
+Mitigating the perturbation of PGD attack ./PGD-pytorch_with_Mitigation/Mitigation.ipynb  
+
 # mitigating_large_adversarial_perturbations_on_X-MAS
 This page has the codes and data appeared in the paper, "Mitigating large adversarial perturbations on X-MAS (X minus Moving Averaged Samples)" [https://arxiv.org/abs/1912.12170]
 
