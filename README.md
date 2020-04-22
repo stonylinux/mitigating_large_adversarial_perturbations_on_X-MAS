@@ -3,10 +3,10 @@ Upload the examples that mitigates the perturbations of PGD and CW attacks.
 The codes below are changed from the demo of https://github.com/Harry24k/adversarial-attacks-pytorch to show the mitigated results.  
        
 1. Mitigating the perturbation of PGD attack  
-   <pre> ./PGD-pytorch_with_Mitigation/Mitigation.ipynb  
+   <pre> $YOUR_JUPYTER_NOTEBOOK_COMMAND ./PGD-pytorch_with_Mitigation/Mitigation.ipynb  
    
 2. Mitigating the perturbation of CW attack 
-   <pre> ./CW-pytorch_with_Mitigation/Mitigation.ipynb 
+   <pre> $YOUR_JUPYTER_NOTEBOOK_COMMAND ./CW-pytorch_with_Mitigation/Mitigation.ipynb 
 
 # mitigating_large_adversarial_perturbations_on_X-MAS
 This page has the codes and data appeared in the paper, "Mitigating large adversarial perturbations on X-MAS (X minus Moving Averaged Samples)" [https://arxiv.org/abs/1912.12170]
